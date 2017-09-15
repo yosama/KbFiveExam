@@ -55,7 +55,7 @@ export default class Checkout  {
 
     tot () { 
         let numbersOfItemsByProduct = this.getItemsNumberByProduct();
-        pricingRules = new PricingRules(numbersOfItemsByProduct);
+        let pricingRules = new PricingRules(numbersOfItemsByProduct);
         let price = pricingRules.calculatePrice();
         console.log("Items:" + this.scannedElements + "\nTotal: "+ price+ "€");
     }

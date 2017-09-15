@@ -1,4 +1,4 @@
-import Checkout from ("./Checkout.js");
+import Checkout from "./Checkout.js";
 
 let pricingRules 
 let co = new Checkout(pricingRules);
